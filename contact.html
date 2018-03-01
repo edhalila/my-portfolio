@@ -3,21 +3,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <title>My portfolio</title>
 </head>
 <body>
   <header>
     <div>
       <nav>
         <ul>
-          <li><div><a href="index.html">Home</a></div></li>
-          <li><div><a href="about.html">About</a></div></li>
-          <li><div><a href="contact.html">Contact me</a></div></li>
+          <li><div class="capital-container-nav">E</div></li>
+          <li><div clas="nav-icon"><a href="index.html"><img src="images/home.png" width="25px"></a></div></li>
+          <li><div class="nav-icon"><a href="about.html"><img src="images/about.png" width="25px"></a></div></li>
+          <li><div class="nav-icon"><a href="contact.html"><img src="images/contact.png" width="25px"></a></div></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
+  <main class="main-container">
+    <div class="form-container">
     <h1>Contact me</h1>
     <form>
 		<label for="name">Name</label><br>
@@ -26,12 +29,9 @@
 		<label for="email">Email</label><br>
 		<input type="text" name="email" required><br>
 		<br>
-		<label for="topic">Topic</label><br>
-		<input type="radio" name="topic" value="General Question" checked>General Question<br>
-		<input type="radio" name="topic" value="Technical Question">Technical Question<br>
-		<br>
+
 		<label for="message">Your message</label><br>
-		<textarea name="message" placeholder="Please write your message here"></textarea><br>
+		<textarea class="message-texttarea" name="message" placeholder="Please write your message here"></textarea><br>
 		<br>
 		<input type="checkbox" name="news">
 		<label for="news">Newsletter Subscription</label><br>
@@ -49,10 +49,10 @@
 		</select><br>
 			<br>
 		<input type="submit" value="SEND">
-	</form><br>
-  
-    <div class="map">
-      <img src="" alt="">
+	</form>
+  </div>
+    <div class="image-container zoom">
+      <img src="images/berlinmap.png" alt="map of Berlin" width="560px" height="365px";>
     </div>
 
   </main>
